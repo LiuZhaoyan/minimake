@@ -48,4 +48,15 @@
 1. 程序按功能拆分为 `.c` 文件, 实现具体功能
 2. 公共声明和定义放在 `.h` 文件, 声明, 宏, 结构体等
 3. 一个 **主文件** `main.c`
+# 阶段1
+vim 缩进修改
+1. `cd ~/.vimrc`
+2. 复制下列内容
+```txt
+set tabstop=4 #设置 Tab 建宽度为4格
+set shiftwidth=4 #设置每级缩进为4格
+set expandtab #原有Tab转化为相应数量空格
 
+set smartindent #智能缩进
+set cindent #专为C设计 
+```
