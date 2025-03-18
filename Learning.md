@@ -59,4 +59,17 @@ set expandtab #原有Tab转化为相应数量空格
 
 set smartindent #智能缩进
 set cindent #专为C设计 
+
 ```
+?什么时候 `char*` 指针有时需要指定大小
+
+-->限定字符串操作范围, 避免缓冲区溢出
+
+此例作为参数传给 `fgets()` 提供操作安全保障
+
+
+
+**perror()函数**
+
+能提供比`printf()` 更多报错信息
+

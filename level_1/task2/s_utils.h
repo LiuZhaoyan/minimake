@@ -1,4 +1,4 @@
-#ifdef S_UTILS_H
+#ifndef S_UTILS_H
 #define S_UTILS_H
 
 void remove_trailing_whitespace(char *line);
