@@ -3,14 +3,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <ctype.h>
-void check_grammar() {
-
-    FILE *file = fopen("./Makefile", "r");
-    if (!file) {
-        perror("Error opening file");
-        exit(EXIT_FAILURE);
-    }
-
+void check_grammar(FILE *file) {
     char line[LINE_MAX];
     int line_number = 0;
     int in_target = 0; // 标记是否在目标块中
@@ -42,8 +35,6 @@ void check_grammar() {
             }
         }
     }
-
-    fclose(file);
 
 }
 
