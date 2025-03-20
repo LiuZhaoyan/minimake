@@ -23,6 +23,7 @@ int main(){
     while(fgets(line,sizeof(line),input)!=NULL){
         line_num++;
         if(is_blank_line(line)){continue;}
+        remove_comment(line);
         if (is_target_line(line)) {
             TargetBlock block;
             parse_target_line(line, line_num, &block);
@@ -50,5 +51,6 @@ int main(){
     free(targets);
 
     free(errors);
+    fclose(input);
     return 0;
 }
